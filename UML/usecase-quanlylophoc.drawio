@@ -1,0 +1,68 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.7">
+  <diagram name="Page-1" id="dxtxzKKhklx0M54ML_kj">
+    <mxGraphModel dx="1281" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RzrW6CG2emEb8pUcVP5n-1" parent="1" style="swimlane;startSize=0;" value="" vertex="1">
+          <mxGeometry height="450" width="360" x="180" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RzrW6CG2emEb8pUcVP5n-2" parent="RzrW6CG2emEb8pUcVP5n-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Quản lý lớp học, môn học, giáo trình&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="240" x="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RzrW6CG2emEb8pUcVP5n-4" parent="RzrW6CG2emEb8pUcVP5n-1" style="ellipse;whiteSpace=wrap;html=1;" value="Nhập tệp để tự động tạo lớp học" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RzrW6CG2emEb8pUcVP5n-5" parent="RzrW6CG2emEb8pUcVP5n-1" style="ellipse;whiteSpace=wrap;html=1;" value="Quản lý lớp học( thông tin lớp học , thành viên)" vertex="1">
+          <mxGeometry height="80" width="120" x="60" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="RzrW6CG2emEb8pUcVP5n-6" parent="RzrW6CG2emEb8pUcVP5n-1" style="ellipse;whiteSpace=wrap;html=1;" value="Phân công giảng viên và thêm sinh viên vào lớp" vertex="1">
+          <mxGeometry height="80" width="156" x="48" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="RzrW6CG2emEb8pUcVP5n-7" parent="RzrW6CG2emEb8pUcVP5n-1" style="ellipse;whiteSpace=wrap;html=1;" value="Nhập tệp để tự động tạo môn học và giáo trình" vertex="1">
+          <mxGeometry height="80" width="140" x="204" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="RzrW6CG2emEb8pUcVP5n-8" parent="RzrW6CG2emEb8pUcVP5n-1" style="ellipse;whiteSpace=wrap;html=1;" value="Quản lý môn học và giáo trình" vertex="1">
+          <mxGeometry height="80" width="120" x="214" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="RzrW6CG2emEb8pUcVP5n-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Nhân viên" vertex="1">
+          <mxGeometry height="60" width="30" x="110" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="RzrW6CG2emEb8pUcVP5n-9" edge="1" parent="1" source="RzrW6CG2emEb8pUcVP5n-3" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="RzrW6CG2emEb8pUcVP5n-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="320" as="sourcePoint" />
+            <mxPoint x="440" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RzrW6CG2emEb8pUcVP5n-10" edge="1" parent="1" source="RzrW6CG2emEb8pUcVP5n-3" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="RzrW6CG2emEb8pUcVP5n-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="320" as="sourcePoint" />
+            <mxPoint x="440" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RzrW6CG2emEb8pUcVP5n-11" edge="1" parent="1" source="RzrW6CG2emEb8pUcVP5n-3" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="RzrW6CG2emEb8pUcVP5n-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="320" as="sourcePoint" />
+            <mxPoint x="440" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RzrW6CG2emEb8pUcVP5n-12" edge="1" parent="1" source="RzrW6CG2emEb8pUcVP5n-3" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="RzrW6CG2emEb8pUcVP5n-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="330" />
+            </Array>
+            <mxPoint x="390" y="320" as="sourcePoint" />
+            <mxPoint x="440" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RzrW6CG2emEb8pUcVP5n-13" edge="1" parent="1" source="RzrW6CG2emEb8pUcVP5n-3" style="endArrow=none;html=1;rounded=0;entryX=0.024;entryY=0.388;entryDx=0;entryDy=0;entryPerimeter=0;" target="RzrW6CG2emEb8pUcVP5n-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="390" y="320" as="sourcePoint" />
+            <mxPoint x="440" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

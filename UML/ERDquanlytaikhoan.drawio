@@ -1,0 +1,54 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
+  <diagram name="Page-1" id="nLYBdYyIMCs8GmY9lEs6">
+    <mxGraphModel dx="1281" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="H55D_euOpnU8gr9C-K27-1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Tài khoản" vertex="1">
+          <mxGeometry height="240" width="146" x="480" y="210" as="geometry">
+            <mxRectangle height="30" width="90" x="344" y="220" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H55D_euOpnU8gr9C-K27-2" parent="H55D_euOpnU8gr9C-K27-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="ID User (PK)" vertex="1">
+          <mxGeometry height="30" width="146" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="H55D_euOpnU8gr9C-K27-15" parent="H55D_euOpnU8gr9C-K27-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="ID Chức vụ (FK)" vertex="1">
+          <mxGeometry height="30" width="146" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H55D_euOpnU8gr9C-K27-3" parent="H55D_euOpnU8gr9C-K27-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Username" vertex="1">
+          <mxGeometry height="30" width="146" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="H55D_euOpnU8gr9C-K27-5" parent="H55D_euOpnU8gr9C-K27-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Passwordhash" vertex="1">
+          <mxGeometry height="30" width="146" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="H55D_euOpnU8gr9C-K27-6" parent="H55D_euOpnU8gr9C-K27-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Fullname" vertex="1">
+          <mxGeometry height="30" width="146" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="H55D_euOpnU8gr9C-K27-7" parent="H55D_euOpnU8gr9C-K27-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Email" vertex="1">
+          <mxGeometry height="30" width="146" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="H55D_euOpnU8gr9C-K27-8" parent="H55D_euOpnU8gr9C-K27-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Trạng thái" vertex="1">
+          <mxGeometry height="30" width="146" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="H55D_euOpnU8gr9C-K27-10" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Chức vụ" vertex="1">
+          <mxGeometry height="120" width="140" x="150" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="H55D_euOpnU8gr9C-K27-11" parent="H55D_euOpnU8gr9C-K27-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="ID Chức vụ (PK)" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="H55D_euOpnU8gr9C-K27-12" parent="H55D_euOpnU8gr9C-K27-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Mô tả chức vụ" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H55D_euOpnU8gr9C-K27-13" parent="H55D_euOpnU8gr9C-K27-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Quyền" vertex="1">
+          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="H55D_euOpnU8gr9C-K27-14" edge="1" parent="1" source="H55D_euOpnU8gr9C-K27-12" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="H55D_euOpnU8gr9C-K27-5" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="360" y="440" as="sourcePoint" />
+            <mxPoint x="470" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

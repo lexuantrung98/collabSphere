@@ -1,0 +1,150 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
+  <diagram name="Page-1" id="G2AORbwF-Z6AsWPtlUpm">
+    <mxGraphModel dx="1226" dy="701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Nhóm Trưởng" vertex="1">
+          <mxGeometry height="30" width="90" x="10" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-3" edge="1" parent="1" source="rFB-nCQOme4LhbeHv0aC-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="rFB-nCQOme4LhbeHv0aC-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-14" edge="1" parent="1" source="rFB-nCQOme4LhbeHv0aC-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" target="rFB-nCQOme4LhbeHv0aC-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="190" />
+              <mxPoint x="140" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-6" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" value="" vertex="1">
+          <mxGeometry height="460" width="20" x="30" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-63" parent="rFB-nCQOme4LhbeHv0aC-6" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="340" width="10" x="5" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-8" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Giao diện" vertex="1">
+          <mxGeometry height="460" width="100" x="230" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-59" parent="rFB-nCQOme4LhbeHv0aC-8" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="340" width="10" x="45" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-65" edge="1" parent="rFB-nCQOme4LhbeHv0aC-8" source="rFB-nCQOme4LhbeHv0aC-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;" target="rFB-nCQOme4LhbeHv0aC-59">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="95" />
+              <mxPoint x="90" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-9" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Dịch vụ dự án" vertex="1">
+          <mxGeometry height="460" width="100" x="550" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-24" parent="rFB-nCQOme4LhbeHv0aC-9" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="250" width="10" x="45" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-53" edge="1" parent="rFB-nCQOme4LhbeHv0aC-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" target="rFB-nCQOme4LhbeHv0aC-24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="155" />
+              <mxPoint x="90" y="180" />
+            </Array>
+            <mxPoint x="55" y="155" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-55" edge="1" parent="rFB-nCQOme4LhbeHv0aC-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="269.94" />
+              <mxPoint x="90" y="294.94" />
+            </Array>
+            <mxPoint x="55" y="269.9988235294117" as="sourcePoint" />
+            <mxPoint x="55" y="294.94" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-13" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="DATABASE" vertex="1">
+          <mxGeometry height="460" width="100" x="810" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Nhập tên công việc, Mô tả &amp;amp; Chọn người thực hiện" vertex="1">
+          <mxGeometry height="30" width="170" x="60" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Lấy mã JWT Token (ID Nhóm trưởng)" vertex="1">
+          <mxGeometry height="30" width="210" x="280" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-22" edge="1" parent="1" source="rFB-nCQOme4LhbeHv0aC-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" target="rFB-nCQOme4LhbeHv0aC-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="250" />
+              <mxPoint x="440" y="250" />
+            </Array>
+            <mxPoint x="290" y="300" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="POST /api/tasks (Gửi yêu cầu tạo công việc)" vertex="1">
+          <mxGeometry height="30" width="250" x="300" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Giải mã JWT (Xác thực quyền Nhóm trưởng)" vertex="1">
+          <mxGeometry height="30" width="160" x="630" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-29" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=14;fillColor=#FFF2CC;strokeColor=#d6b656;" value="Hệ thống kiểm tra xem người tạo có thuộc dự án này không" vertex="1">
+          <mxGeometry height="40" width="220" x="610" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Lưu thông tin công việc (Task)" vertex="1">
+          <mxGeometry height="30" width="180" x="647" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Xác nhận đã lưu (Task ID)" vertex="1">
+          <mxGeometry height="30" width="150" x="650" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-40" edge="1" parent="1" source="rFB-nCQOme4LhbeHv0aC-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" target="rFB-nCQOme4LhbeHv0aC-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="480" />
+              <mxPoint x="720" y="480" />
+            </Array>
+            <mxPoint x="830" y="550" as="sourcePoint" />
+            <mxPoint x="580" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-56" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Cập nhật trạng thái Task = &quot;Cần làm &quot; (To Do)" vertex="1">
+          <mxGeometry height="30" width="260" x="607" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-58" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Trả về kết quả (Kèm thông tin Task)" vertex="1">
+          <mxGeometry height="30" width="270" x="300" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-60" edge="1" parent="1" source="rFB-nCQOme4LhbeHv0aC-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;exitPerimeter=0;" target="rFB-nCQOme4LhbeHv0aC-59">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="495" />
+              <mxPoint x="360" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-62" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Hiển thị Task trên bảng Kanban" vertex="1">
+          <mxGeometry height="30" width="190" x="60" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-64" edge="1" parent="1" source="rFB-nCQOme4LhbeHv0aC-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;exitPerimeter=0;" target="rFB-nCQOme4LhbeHv0aC-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="525" />
+              <mxPoint x="80" y="525" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-67" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" target="rFB-nCQOme4LhbeHv0aC-34" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="430" />
+              <mxPoint x="800" y="430" />
+            </Array>
+            <mxPoint x="607" y="429.9988235294117" as="sourcePoint" />
+            <mxPoint x="861.5" y="429.9988235294117" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rFB-nCQOme4LhbeHv0aC-34" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="855" y="430" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
+  <diagram name="Page-1" id="T_wn_2sXGE0TkjizAQa1">
+    <mxGraphModel dx="1281" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HurzitVuzFnL2_AiXdgy-1" parent="1" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="360" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="HurzitVuzFnL2_AiXdgy-2" edge="1" parent="1" source="HurzitVuzFnL2_AiXdgy-1" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="375" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HurzitVuzFnL2_AiXdgy-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" value="Nhập Email, mật khẩu" vertex="1">
+          <mxGeometry height="40" width="120" x="315" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="HurzitVuzFnL2_AiXdgy-11" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" value="" vertex="1">
+          <mxGeometry height="40" width="80" x="335" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="HurzitVuzFnL2_AiXdgy-12" edge="1" parent="1" source="HurzitVuzFnL2_AiXdgy-11" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="HurzitVuzFnL2_AiXdgy-16" value="Sai">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="280" />
+            </Array>
+            <mxPoint x="560" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HurzitVuzFnL2_AiXdgy-13" edge="1" parent="1" source="HurzitVuzFnL2_AiXdgy-11" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;verticalAlign=top;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" value="Đúng">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <Array as="points">
+              <mxPoint x="375" y="370" />
+            </Array>
+            <mxPoint x="375" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HurzitVuzFnL2_AiXdgy-15" edge="1" parent="1" source="HurzitVuzFnL2_AiXdgy-9" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="210" as="sourcePoint" />
+            <mxPoint x="375" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HurzitVuzFnL2_AiXdgy-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" value="Thông báo sai yêu cầu nhập lại" vertex="1">
+          <mxGeometry height="40" width="120" x="500" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="HurzitVuzFnL2_AiXdgy-17" edge="1" parent="1" source="HurzitVuzFnL2_AiXdgy-16" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="HurzitVuzFnL2_AiXdgy-9" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HurzitVuzFnL2_AiXdgy-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" value="Đến giao diện" vertex="1">
+          <mxGeometry height="40" width="120" x="315" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="HurzitVuzFnL2_AiXdgy-19" edge="1" parent="1" source="HurzitVuzFnL2_AiXdgy-18" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="375" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HurzitVuzFnL2_AiXdgy-20" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="360" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="HurzitVuzFnL2_AiXdgy-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" value="Nhấn đăng nhập" vertex="1">
+          <mxGeometry height="40" width="120" x="315" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="HurzitVuzFnL2_AiXdgy-22" edge="1" parent="1" source="HurzitVuzFnL2_AiXdgy-21" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="HurzitVuzFnL2_AiXdgy-11" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="375" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

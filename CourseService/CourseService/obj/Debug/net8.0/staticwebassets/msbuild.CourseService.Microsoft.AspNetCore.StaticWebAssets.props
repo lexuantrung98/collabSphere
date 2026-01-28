@@ -1,0 +1,292 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\0434e852-21f9-499c-81ea-5d2d5b05acfa_Cau hoi buoi 7.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourseService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourseService</BasePath>
+      <RelativePath>syllabuses/0434e852-21f9-499c-81ea-5d2d5b05acfa_Cau hoi buoi 7.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\0434e852-21f9-499c-81ea-5d2d5b05acfa_Cau hoi buoi 7.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\05d9c9ae-3373-426b-a951-35e9e2191bf6_WRITING REVIEW.docx))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourseService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourseService</BasePath>
+      <RelativePath>syllabuses/05d9c9ae-3373-426b-a951-35e9e2191bf6_WRITING REVIEW.docx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\05d9c9ae-3373-426b-a951-35e9e2191bf6_WRITING REVIEW.docx))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\07356e0c-b4a7-46b6-9e57-48be3e753eee_Cau hoi buoi 7.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourseService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourseService</BasePath>
+      <RelativePath>syllabuses/07356e0c-b4a7-46b6-9e57-48be3e753eee_Cau hoi buoi 7.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\07356e0c-b4a7-46b6-9e57-48be3e753eee_Cau hoi buoi 7.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\14de0ce6-e2fb-425b-9d98-d31a1a5061a4_lythuyet.docx))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourseService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourseService</BasePath>
+      <RelativePath>syllabuses/14de0ce6-e2fb-425b-9d98-d31a1a5061a4_lythuyet.docx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\14de0ce6-e2fb-425b-9d98-d31a1a5061a4_lythuyet.docx))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\32c572b2-6ddf-4ca1-9333-f3cf23072c25_Cau hoi buoi 7.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourseService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourseService</BasePath>
+      <RelativePath>syllabuses/32c572b2-6ddf-4ca1-9333-f3cf23072c25_Cau hoi buoi 7.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\32c572b2-6ddf-4ca1-9333-f3cf23072c25_Cau hoi buoi 7.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\331e62ad-b846-4376-98f1-15a1d1c2bfd2_lythuyet.docx))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourseService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourseService</BasePath>
+      <RelativePath>syllabuses/331e62ad-b846-4376-98f1-15a1d1c2bfd2_lythuyet.docx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\331e62ad-b846-4376-98f1-15a1d1c2bfd2_lythuyet.docx))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\4083bcf6-be01-42c2-a2b8-ff29313d1ebe_lythuyet.docx))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourseService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourseService</BasePath>
+      <RelativePath>syllabuses/4083bcf6-be01-42c2-a2b8-ff29313d1ebe_lythuyet.docx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\4083bcf6-be01-42c2-a2b8-ff29313d1ebe_lythuyet.docx))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\6eab7658-6d30-47b4-8ab9-d6938ed4bb8d_test_syllabus.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourseService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourseService</BasePath>
+      <RelativePath>syllabuses/6eab7658-6d30-47b4-8ab9-d6938ed4bb8d_test_syllabus.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\6eab7658-6d30-47b4-8ab9-d6938ed4bb8d_test_syllabus.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\711933c4-2908-454a-b558-38ee1dddc833_Cau hoi buoi 7.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourseService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourseService</BasePath>
+      <RelativePath>syllabuses/711933c4-2908-454a-b558-38ee1dddc833_Cau hoi buoi 7.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\711933c4-2908-454a-b558-38ee1dddc833_Cau hoi buoi 7.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\78544770-888d-42bf-9280-567b002a9d82_lythuyet.docx))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourseService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourseService</BasePath>
+      <RelativePath>syllabuses/78544770-888d-42bf-9280-567b002a9d82_lythuyet.docx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\78544770-888d-42bf-9280-567b002a9d82_lythuyet.docx))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\8c14b41a-cb5a-4386-b13b-70c0569a1b0e_Cau hoi buoi 7.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourseService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourseService</BasePath>
+      <RelativePath>syllabuses/8c14b41a-cb5a-4386-b13b-70c0569a1b0e_Cau hoi buoi 7.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\8c14b41a-cb5a-4386-b13b-70c0569a1b0e_Cau hoi buoi 7.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\9127c7f8-3618-44c5-b62b-6860a1705027_Cau hoi buoi 7.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourseService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourseService</BasePath>
+      <RelativePath>syllabuses/9127c7f8-3618-44c5-b62b-6860a1705027_Cau hoi buoi 7.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\9127c7f8-3618-44c5-b62b-6860a1705027_Cau hoi buoi 7.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\95b00b29-877d-4ae2-8da3-b900f0500491_Cau hoi buoi 7.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourseService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourseService</BasePath>
+      <RelativePath>syllabuses/95b00b29-877d-4ae2-8da3-b900f0500491_Cau hoi buoi 7.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\95b00b29-877d-4ae2-8da3-b900f0500491_Cau hoi buoi 7.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\adb472a4-149d-4b8d-99ec-cbd1c82362c5_Giaotrinh - Van Hong Tan - 2006 -He Thong Giao Thong Thong Minh-ITS (1).pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourseService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourseService</BasePath>
+      <RelativePath>syllabuses/adb472a4-149d-4b8d-99ec-cbd1c82362c5_Giaotrinh - Van Hong Tan - 2006 -He Thong Giao Thong Thong Minh-ITS (1).pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\adb472a4-149d-4b8d-99ec-cbd1c82362c5_Giaotrinh - Van Hong Tan - 2006 -He Thong Giao Thong Thong Minh-ITS (1).pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\bcbc76a9-36be-4b65-bfd2-43563b5ca1fc_Chương 9.pptx))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourseService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourseService</BasePath>
+      <RelativePath>syllabuses/bcbc76a9-36be-4b65-bfd2-43563b5ca1fc_Chương 9.pptx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\bcbc76a9-36be-4b65-bfd2-43563b5ca1fc_Chương 9.pptx))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\cb5c56fd-a153-4558-b84c-e0cdf5030f92_WRITING REVIEW.docx))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourseService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourseService</BasePath>
+      <RelativePath>syllabuses/cb5c56fd-a153-4558-b84c-e0cdf5030f92_WRITING REVIEW.docx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\cb5c56fd-a153-4558-b84c-e0cdf5030f92_WRITING REVIEW.docx))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\d35857d6-d8bc-4673-b89a-12bb9e1dd2f2_Cau hoi buoi 7.pdf))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourseService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourseService</BasePath>
+      <RelativePath>syllabuses/d35857d6-d8bc-4673-b89a-12bb9e1dd2f2_Cau hoi buoi 7.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\d35857d6-d8bc-4673-b89a-12bb9e1dd2f2_Cau hoi buoi 7.pdf))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\eaa24190-5226-42eb-99d9-27a9d65cbb61_WRITING REVIEW.docx))">
+      <SourceType>Package</SourceType>
+      <SourceId>CourseService</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CourseService</BasePath>
+      <RelativePath>syllabuses/eaa24190-5226-42eb-99d9-27a9d65cbb61_WRITING REVIEW.docx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\syllabuses\eaa24190-5226-42eb-99d9-27a9d65cbb61_WRITING REVIEW.docx))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

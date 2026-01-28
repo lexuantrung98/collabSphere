@@ -1,0 +1,252 @@
+using CourseService.Data;
+using CourseService.DTOs;
+using CourseService.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+
+namespace CourseService.Services
+{
+    public class GroupService : IGroupService
+    {
+        private readonly CourseDbContext _context;
+        private readonly HttpClient _httpClient;
+        private readonly string _projectServiceUrl;
+
+        public GroupService(CourseDbContext context, HttpClient httpClient, IConfiguration configuration)
+        {
+            _context = context;
+            _httpClient = httpClient;
+            _projectServiceUrl = configuration["ServiceUrls:ProjectService"] ?? "http://localhost:5234";
+        }
+
+        public async Task<List<GroupDto>> GetGroupsByClassAsync(int classId)
+                    StudentEmail = m.StudentEmail,
+                    Role = m.Role,
+                    JoinedAt = m.JoinedAt
+                }).ToList()
+            }).ToList();
+        }
+
+        public async Task<Group?> GetGroupByIdAsync(int id)
+        {
+            return await _context.Groups
+                .Include(g => g.Members)
+                .Include(g => g.Class)
+                .FirstOrDefaultAsync(g => g.Id == id);
+        }
+
+        public async Task<Group> CreateGroupAsync(CreateGroupDto dto)
+        {
+            // Validate class exists
+            var classExists = await _context.Classes.AnyAsync(c => c.Id == dto.ClassId);
+            if (!classExists)
+                throw new Exception("Lớp học không tồn tại");
+
+            var group = new Group
+            {
+                Name = dto.Name,
+                Description = dto.Description,
+                ClassId = dto.ClassId,
+                MaxMembers = dto.MaxMembers > 0 ? dto.MaxMembers : 5,
+                CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow
+            };
+
+            _context.Groups.Add(group);
+            await _context.SaveChangesAsync();
+
+            return group;
+        }
+
+        public async Task<bool> UpdateGroupAsync(int id, CreateGroupDto dto)
+        {
+            var group = await _context.Groups.FindAsync(id);
+            if (group == null) return false;
+
+            group.Name = dto.Name;
+            group.Description = dto.Description;
+            group.MaxMembers = dto.MaxMembers > 0 ? dto.MaxMembers : group.MaxMembers;
+            group.UpdatedAt = DateTime.UtcNow;
+
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<bool> DeleteGroupAsync(int id)
+        {
+            var group = await _context.Groups
+                .Include(g => g.Members)
+                .Include(g => g.Class)
+                .FirstOrDefaultAsync(g => g.Id == id);
+            
+            if (group == null) return false;
+
+            try
+            {
+                // Delete corresponding ProjectGroup in ProjectService (if exists)
+                // Call ProjectService API: DELETE /api/ProjectGroups/by-course-group?classCode={classCode}&groupName={groupName}
+                var classCode = group.Class?.Code ?? "";
+                var groupName = group.Name;
+                
+                if (!string.IsNullOrEmpty(classCode) && !string.IsNullOrEmpty(groupName))
+                {
+                    var deleteUrl = $"{_projectServiceUrl}/api/ProjectGroups/by-course-group?classCode={Uri.EscapeDataString(classCode)}&groupName={Uri.EscapeDataString(groupName)}";
+                    
+                    try
+                    {
+                        var response = await _httpClient.DeleteAsync(deleteUrl);
+                        // Log but don't fail if ProjectService delete fails
+                        if (!response.IsSuccessStatusCode)
+                        {
+                            Console.WriteLine($"Warning: Failed to delete ProjectGroup for {groupName} in class {classCode}. Status: {response.StatusCode}");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Warning: Error calling ProjectService to delete group: {ex.Message}");
+                        // Continue with CourseService delete even if ProjectService fails
+                    }
+                }
+
+                // Remove all members first
+                _context.GroupMembers.RemoveRange(group.Members);
+                _context.Groups.Remove(group);
+                
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        // ==================== MEMBERS ====================
+
+        public async Task<List<GroupMemberDto>> GetGroupMembersAsync(int groupId)
+        {
+            var members = await _context.GroupMembers
+                .Where(m => m.GroupId == groupId)
+                .OrderBy(m => m.JoinedAt)
+                .ToListAsync();
+
+            return members.Select(m => new GroupMemberDto
+            {
+                Id = m.Id,
+                UserId = m.StudentId,  // Mapping StudentId → UserId trong DTO
+                StudentCode = m.StudentCode,
+                StudentName = m.StudentName,
+                StudentEmail = m.StudentEmail,
+                Role = m.Role,
+                JoinedAt = m.JoinedAt
+            }).ToList();
+        }
+
+        public async Task<GroupMember> AddMemberToGroupAsync(int groupId, AddGroupMemberDto dto)
+        {
+            // Validate group exists
+            var group = await _context.Groups
+                .Include(g => g.Class)
+                .FirstOrDefaultAsync(g => g.Id == groupId);
+                
+            if (group == null)
+                throw new Exception("Nhóm không tồn tại");
+
+            // Check if user is already in group
+            var existingMember = await _context.GroupMembers
+                .FirstOrDefaultAsync(m => m.GroupId == groupId && m.StudentId == dto.UserId);
+            
+            if (existingMember != null)
+                throw new Exception("Sinh viên đã có trong nhóm");
+
+            // Get student info from ClassMembers to populate StudentCode, StudentName, StudentEmail
+            var classMember = await _context.ClassMembers
+                .FirstOrDefaultAsync(m => m.ClassId == group.ClassId && m.StudentId == dto.UserId);
+
+            var member = new GroupMember
+            {
+                GroupId = groupId,
+                StudentId = dto.UserId,  // Guid from AccountService
+                StudentCode = classMember?.StudentCode ?? "",
+                StudentName = classMember?.FullName ?? "",
+                StudentEmail = classMember?.Email ?? "",
+                Role = dto.Role ?? "Member",
+                JoinedAt = DateTime.UtcNow
+            };
+
+            _context.GroupMembers.Add(member);
+            await _context.SaveChangesAsync();
+
+            return member;
+        }
+
+        public async Task<bool> RemoveMemberFromGroupAsync(int groupId, int memberId)
+        {
+            var member = await _context.GroupMembers
+                .FirstOrDefaultAsync(m => m.GroupId == groupId && m.Id == memberId);
+
+            if (member == null) return false;
+
+            _context.GroupMembers.Remove(member);
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
+        // Student self-join group
+        public async Task<GroupMember> JoinGroupAsync(int groupId, string studentCode)
+        {
+            // 1. Get group with members
+            var group = await _context.Groups
+                .Include(g => g.Members)
+                .FirstOrDefaultAsync(g => g.Id == groupId);
+            
+            if (group == null)
+                throw new Exception("Nhóm không tồn tại");
+
+            // 2. Check if group is full
+            if (group.Members.Count >= group.MaxMembers)
+                throw new Exception($"Nhóm đã đủ {group.MaxMembers} thành viên");
+
+            // 3. Check if student is already in this group
+            var existingMember = group.Members.FirstOrDefault(m => m.StudentCode == studentCode);
+            if (existingMember != null)
+                throw new Exception("Bạn đã tham gia nhóm này");
+
+            // 4. Check if student is in the class
+            var isInClass = await _context.ClassMembers
+                .AnyAsync(m => m.ClassId == group.ClassId && m.StudentCode == studentCode);
+            
+            if (!isInClass)
+                throw new Exception("Bạn không thuộc lớp này, không thể tham gia nhóm");
+
+            // 5. Check if student is already in another group of the same class
+            var existingGroupInClass = await _context.GroupMembers
+                .Include(m => m.Group)
+                .AnyAsync(m => m.StudentCode == studentCode && m.Group!.ClassId == group.ClassId);
+            
+            if (existingGroupInClass)
+                throw new Exception("Bạn đã tham gia một nhóm khác trong lớp này");
+
+            // 6. Get student info from ClassMembers
+            var classMember = await _context.ClassMembers
+                .FirstOrDefaultAsync(m => m.ClassId == group.ClassId && m.StudentCode == studentCode);
+
+            // 7. Add student to group
+            var member = new GroupMember
+            {
+                GroupId = groupId,
+                StudentId = classMember?.StudentId ?? Guid.Empty,  // Đổi từ UserId → StudentId
+                StudentCode = studentCode,
+                StudentName = classMember?.FullName ?? "",
+                StudentEmail = classMember?.Email ?? "",
+                Role = "Member",
+                JoinedAt = DateTime.UtcNow
+            };
+
+            _context.GroupMembers.Add(member);
+            await _context.SaveChangesAsync();
+
+            return member;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "z3u1GztZvHprKrPrKbaGfcOJQipmS5OkiVqrH65NUQU=",
+  "Hash": "ZOJPrY++0LCAahOPCJ6YB+eDeGvDeVsCwkCfk+TUEuk=",
   "Source": "CourseService",
   "BasePath": "_content/CourseService",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "CourseService\\wwwroot",
+      "Name": "CourseService/wwwroot",
       "Source": "CourseService",
-      "ContentRoot": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\",
+      "ContentRoot": "/src/CourseService/wwwroot/",
       "BasePath": "_content/CourseService",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\syllabuses\\0434e852-21f9-499c-81ea-5d2d5b05acfa_Cau hoi buoi 7.pdf",
+      "Identity": "/src/CourseService/wwwroot/syllabuses/0434e852-21f9-499c-81ea-5d2d5b05acfa_Cau hoi buoi 7.pdf",
       "SourceId": "CourseService",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\",
+      "ContentRoot": "/src/CourseService/wwwroot/",
       "BasePath": "_content/CourseService",
       "RelativePath": "syllabuses/0434e852-21f9-499c-81ea-5d2d5b05acfa_Cau hoi buoi 7.pdf",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\syllabuses\\0434e852-21f9-499c-81ea-5d2d5b05acfa_Cau hoi buoi 7.pdf"
+      "OriginalItemSpec": "wwwroot/syllabuses/0434e852-21f9-499c-81ea-5d2d5b05acfa_Cau hoi buoi 7.pdf"
     },
     {
-      "Identity": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\syllabuses\\05d9c9ae-3373-426b-a951-35e9e2191bf6_WRITING REVIEW.docx",
+      "Identity": "/src/CourseService/wwwroot/syllabuses/05d9c9ae-3373-426b-a951-35e9e2191bf6_WRITING REVIEW.docx",
       "SourceId": "CourseService",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\",
+      "ContentRoot": "/src/CourseService/wwwroot/",
       "BasePath": "_content/CourseService",
       "RelativePath": "syllabuses/05d9c9ae-3373-426b-a951-35e9e2191bf6_WRITING REVIEW.docx",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\syllabuses\\05d9c9ae-3373-426b-a951-35e9e2191bf6_WRITING REVIEW.docx"
+      "OriginalItemSpec": "wwwroot/syllabuses/05d9c9ae-3373-426b-a951-35e9e2191bf6_WRITING REVIEW.docx"
     },
     {
-      "Identity": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\syllabuses\\07356e0c-b4a7-46b6-9e57-48be3e753eee_Cau hoi buoi 7.pdf",
+      "Identity": "/src/CourseService/wwwroot/syllabuses/07356e0c-b4a7-46b6-9e57-48be3e753eee_Cau hoi buoi 7.pdf",
       "SourceId": "CourseService",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\",
+      "ContentRoot": "/src/CourseService/wwwroot/",
       "BasePath": "_content/CourseService",
       "RelativePath": "syllabuses/07356e0c-b4a7-46b6-9e57-48be3e753eee_Cau hoi buoi 7.pdf",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\syllabuses\\07356e0c-b4a7-46b6-9e57-48be3e753eee_Cau hoi buoi 7.pdf"
+      "OriginalItemSpec": "wwwroot/syllabuses/07356e0c-b4a7-46b6-9e57-48be3e753eee_Cau hoi buoi 7.pdf"
     },
     {
-      "Identity": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\syllabuses\\14de0ce6-e2fb-425b-9d98-d31a1a5061a4_lythuyet.docx",
+      "Identity": "/src/CourseService/wwwroot/syllabuses/14de0ce6-e2fb-425b-9d98-d31a1a5061a4_lythuyet.docx",
       "SourceId": "CourseService",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\",
+      "ContentRoot": "/src/CourseService/wwwroot/",
       "BasePath": "_content/CourseService",
       "RelativePath": "syllabuses/14de0ce6-e2fb-425b-9d98-d31a1a5061a4_lythuyet.docx",
       "AssetKind": "All",
@@ -90,13 +90,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\syllabuses\\14de0ce6-e2fb-425b-9d98-d31a1a5061a4_lythuyet.docx"
+      "OriginalItemSpec": "wwwroot/syllabuses/14de0ce6-e2fb-425b-9d98-d31a1a5061a4_lythuyet.docx"
     },
     {
-      "Identity": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\syllabuses\\32c572b2-6ddf-4ca1-9333-f3cf23072c25_Cau hoi buoi 7.pdf",
+      "Identity": "/src/CourseService/wwwroot/syllabuses/32c572b2-6ddf-4ca1-9333-f3cf23072c25_Cau hoi buoi 7.pdf",
       "SourceId": "CourseService",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\",
+      "ContentRoot": "/src/CourseService/wwwroot/",
       "BasePath": "_content/CourseService",
       "RelativePath": "syllabuses/32c572b2-6ddf-4ca1-9333-f3cf23072c25_Cau hoi buoi 7.pdf",
       "AssetKind": "All",
@@ -109,13 +109,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\syllabuses\\32c572b2-6ddf-4ca1-9333-f3cf23072c25_Cau hoi buoi 7.pdf"
+      "OriginalItemSpec": "wwwroot/syllabuses/32c572b2-6ddf-4ca1-9333-f3cf23072c25_Cau hoi buoi 7.pdf"
     },
     {
-      "Identity": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\syllabuses\\331e62ad-b846-4376-98f1-15a1d1c2bfd2_lythuyet.docx",
+      "Identity": "/src/CourseService/wwwroot/syllabuses/331e62ad-b846-4376-98f1-15a1d1c2bfd2_lythuyet.docx",
       "SourceId": "CourseService",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\",
+      "ContentRoot": "/src/CourseService/wwwroot/",
       "BasePath": "_content/CourseService",
       "RelativePath": "syllabuses/331e62ad-b846-4376-98f1-15a1d1c2bfd2_lythuyet.docx",
       "AssetKind": "All",
@@ -128,13 +128,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\syllabuses\\331e62ad-b846-4376-98f1-15a1d1c2bfd2_lythuyet.docx"
+      "OriginalItemSpec": "wwwroot/syllabuses/331e62ad-b846-4376-98f1-15a1d1c2bfd2_lythuyet.docx"
     },
     {
-      "Identity": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\syllabuses\\4083bcf6-be01-42c2-a2b8-ff29313d1ebe_lythuyet.docx",
+      "Identity": "/src/CourseService/wwwroot/syllabuses/4083bcf6-be01-42c2-a2b8-ff29313d1ebe_lythuyet.docx",
       "SourceId": "CourseService",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\",
+      "ContentRoot": "/src/CourseService/wwwroot/",
       "BasePath": "_content/CourseService",
       "RelativePath": "syllabuses/4083bcf6-be01-42c2-a2b8-ff29313d1ebe_lythuyet.docx",
       "AssetKind": "All",
@@ -147,13 +147,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\syllabuses\\4083bcf6-be01-42c2-a2b8-ff29313d1ebe_lythuyet.docx"
+      "OriginalItemSpec": "wwwroot/syllabuses/4083bcf6-be01-42c2-a2b8-ff29313d1ebe_lythuyet.docx"
     },
     {
-      "Identity": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\syllabuses\\6eab7658-6d30-47b4-8ab9-d6938ed4bb8d_test_syllabus.pdf",
+      "Identity": "/src/CourseService/wwwroot/syllabuses/6eab7658-6d30-47b4-8ab9-d6938ed4bb8d_test_syllabus.pdf",
       "SourceId": "CourseService",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\",
+      "ContentRoot": "/src/CourseService/wwwroot/",
       "BasePath": "_content/CourseService",
       "RelativePath": "syllabuses/6eab7658-6d30-47b4-8ab9-d6938ed4bb8d_test_syllabus.pdf",
       "AssetKind": "All",
@@ -166,13 +166,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\syllabuses\\6eab7658-6d30-47b4-8ab9-d6938ed4bb8d_test_syllabus.pdf"
+      "OriginalItemSpec": "wwwroot/syllabuses/6eab7658-6d30-47b4-8ab9-d6938ed4bb8d_test_syllabus.pdf"
     },
     {
-      "Identity": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\syllabuses\\711933c4-2908-454a-b558-38ee1dddc833_Cau hoi buoi 7.pdf",
+      "Identity": "/src/CourseService/wwwroot/syllabuses/711933c4-2908-454a-b558-38ee1dddc833_Cau hoi buoi 7.pdf",
       "SourceId": "CourseService",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\",
+      "ContentRoot": "/src/CourseService/wwwroot/",
       "BasePath": "_content/CourseService",
       "RelativePath": "syllabuses/711933c4-2908-454a-b558-38ee1dddc833_Cau hoi buoi 7.pdf",
       "AssetKind": "All",
@@ -185,13 +185,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\syllabuses\\711933c4-2908-454a-b558-38ee1dddc833_Cau hoi buoi 7.pdf"
+      "OriginalItemSpec": "wwwroot/syllabuses/711933c4-2908-454a-b558-38ee1dddc833_Cau hoi buoi 7.pdf"
     },
     {
-      "Identity": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\syllabuses\\78544770-888d-42bf-9280-567b002a9d82_lythuyet.docx",
+      "Identity": "/src/CourseService/wwwroot/syllabuses/78544770-888d-42bf-9280-567b002a9d82_lythuyet.docx",
       "SourceId": "CourseService",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\",
+      "ContentRoot": "/src/CourseService/wwwroot/",
       "BasePath": "_content/CourseService",
       "RelativePath": "syllabuses/78544770-888d-42bf-9280-567b002a9d82_lythuyet.docx",
       "AssetKind": "All",
@@ -204,13 +204,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\syllabuses\\78544770-888d-42bf-9280-567b002a9d82_lythuyet.docx"
+      "OriginalItemSpec": "wwwroot/syllabuses/78544770-888d-42bf-9280-567b002a9d82_lythuyet.docx"
     },
     {
-      "Identity": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\syllabuses\\8c14b41a-cb5a-4386-b13b-70c0569a1b0e_Cau hoi buoi 7.pdf",
+      "Identity": "/src/CourseService/wwwroot/syllabuses/8c14b41a-cb5a-4386-b13b-70c0569a1b0e_Cau hoi buoi 7.pdf",
       "SourceId": "CourseService",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\",
+      "ContentRoot": "/src/CourseService/wwwroot/",
       "BasePath": "_content/CourseService",
       "RelativePath": "syllabuses/8c14b41a-cb5a-4386-b13b-70c0569a1b0e_Cau hoi buoi 7.pdf",
       "AssetKind": "All",
@@ -223,13 +223,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\syllabuses\\8c14b41a-cb5a-4386-b13b-70c0569a1b0e_Cau hoi buoi 7.pdf"
+      "OriginalItemSpec": "wwwroot/syllabuses/8c14b41a-cb5a-4386-b13b-70c0569a1b0e_Cau hoi buoi 7.pdf"
     },
     {
-      "Identity": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\syllabuses\\9127c7f8-3618-44c5-b62b-6860a1705027_Cau hoi buoi 7.pdf",
+      "Identity": "/src/CourseService/wwwroot/syllabuses/9127c7f8-3618-44c5-b62b-6860a1705027_Cau hoi buoi 7.pdf",
       "SourceId": "CourseService",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\",
+      "ContentRoot": "/src/CourseService/wwwroot/",
       "BasePath": "_content/CourseService",
       "RelativePath": "syllabuses/9127c7f8-3618-44c5-b62b-6860a1705027_Cau hoi buoi 7.pdf",
       "AssetKind": "All",
@@ -242,13 +242,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\syllabuses\\9127c7f8-3618-44c5-b62b-6860a1705027_Cau hoi buoi 7.pdf"
+      "OriginalItemSpec": "wwwroot/syllabuses/9127c7f8-3618-44c5-b62b-6860a1705027_Cau hoi buoi 7.pdf"
     },
     {
-      "Identity": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\syllabuses\\95b00b29-877d-4ae2-8da3-b900f0500491_Cau hoi buoi 7.pdf",
+      "Identity": "/src/CourseService/wwwroot/syllabuses/95b00b29-877d-4ae2-8da3-b900f0500491_Cau hoi buoi 7.pdf",
       "SourceId": "CourseService",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\",
+      "ContentRoot": "/src/CourseService/wwwroot/",
       "BasePath": "_content/CourseService",
       "RelativePath": "syllabuses/95b00b29-877d-4ae2-8da3-b900f0500491_Cau hoi buoi 7.pdf",
       "AssetKind": "All",
@@ -261,13 +261,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\syllabuses\\95b00b29-877d-4ae2-8da3-b900f0500491_Cau hoi buoi 7.pdf"
+      "OriginalItemSpec": "wwwroot/syllabuses/95b00b29-877d-4ae2-8da3-b900f0500491_Cau hoi buoi 7.pdf"
     },
     {
-      "Identity": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\syllabuses\\adb472a4-149d-4b8d-99ec-cbd1c82362c5_Giaotrinh - Van Hong Tan - 2006 -He Thong Giao Thong Thong Minh-ITS (1).pdf",
+      "Identity": "/src/CourseService/wwwroot/syllabuses/adb472a4-149d-4b8d-99ec-cbd1c82362c5_Giaotrinh - Van Hong Tan - 2006 -He Thong Giao Thong Thong Minh-ITS (1).pdf",
       "SourceId": "CourseService",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\",
+      "ContentRoot": "/src/CourseService/wwwroot/",
       "BasePath": "_content/CourseService",
       "RelativePath": "syllabuses/adb472a4-149d-4b8d-99ec-cbd1c82362c5_Giaotrinh - Van Hong Tan - 2006 -He Thong Giao Thong Thong Minh-ITS (1).pdf",
       "AssetKind": "All",
@@ -280,13 +280,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\syllabuses\\adb472a4-149d-4b8d-99ec-cbd1c82362c5_Giaotrinh - Van Hong Tan - 2006 -He Thong Giao Thong Thong Minh-ITS (1).pdf"
+      "OriginalItemSpec": "wwwroot/syllabuses/adb472a4-149d-4b8d-99ec-cbd1c82362c5_Giaotrinh - Van Hong Tan - 2006 -He Thong Giao Thong Thong Minh-ITS (1).pdf"
     },
     {
-      "Identity": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\syllabuses\\bcbc76a9-36be-4b65-bfd2-43563b5ca1fc_Chương 9.pptx",
+      "Identity": "/src/CourseService/wwwroot/syllabuses/bcbc76a9-36be-4b65-bfd2-43563b5ca1fc_Chương 9.pptx",
       "SourceId": "CourseService",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\",
+      "ContentRoot": "/src/CourseService/wwwroot/",
       "BasePath": "_content/CourseService",
       "RelativePath": "syllabuses/bcbc76a9-36be-4b65-bfd2-43563b5ca1fc_Chương 9.pptx",
       "AssetKind": "All",
@@ -299,13 +299,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\syllabuses\\bcbc76a9-36be-4b65-bfd2-43563b5ca1fc_Chương 9.pptx"
+      "OriginalItemSpec": "wwwroot/syllabuses/bcbc76a9-36be-4b65-bfd2-43563b5ca1fc_Chương 9.pptx"
     },
     {
-      "Identity": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\syllabuses\\cb5c56fd-a153-4558-b84c-e0cdf5030f92_WRITING REVIEW.docx",
+      "Identity": "/src/CourseService/wwwroot/syllabuses/cb5c56fd-a153-4558-b84c-e0cdf5030f92_WRITING REVIEW.docx",
       "SourceId": "CourseService",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\",
+      "ContentRoot": "/src/CourseService/wwwroot/",
       "BasePath": "_content/CourseService",
       "RelativePath": "syllabuses/cb5c56fd-a153-4558-b84c-e0cdf5030f92_WRITING REVIEW.docx",
       "AssetKind": "All",
@@ -318,13 +318,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\syllabuses\\cb5c56fd-a153-4558-b84c-e0cdf5030f92_WRITING REVIEW.docx"
+      "OriginalItemSpec": "wwwroot/syllabuses/cb5c56fd-a153-4558-b84c-e0cdf5030f92_WRITING REVIEW.docx"
     },
     {
-      "Identity": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\syllabuses\\d35857d6-d8bc-4673-b89a-12bb9e1dd2f2_Cau hoi buoi 7.pdf",
+      "Identity": "/src/CourseService/wwwroot/syllabuses/d35857d6-d8bc-4673-b89a-12bb9e1dd2f2_Cau hoi buoi 7.pdf",
       "SourceId": "CourseService",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\",
+      "ContentRoot": "/src/CourseService/wwwroot/",
       "BasePath": "_content/CourseService",
       "RelativePath": "syllabuses/d35857d6-d8bc-4673-b89a-12bb9e1dd2f2_Cau hoi buoi 7.pdf",
       "AssetKind": "All",
@@ -337,13 +337,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\syllabuses\\d35857d6-d8bc-4673-b89a-12bb9e1dd2f2_Cau hoi buoi 7.pdf"
+      "OriginalItemSpec": "wwwroot/syllabuses/d35857d6-d8bc-4673-b89a-12bb9e1dd2f2_Cau hoi buoi 7.pdf"
     },
     {
-      "Identity": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\syllabuses\\eaa24190-5226-42eb-99d9-27a9d65cbb61_WRITING REVIEW.docx",
+      "Identity": "/src/CourseService/wwwroot/syllabuses/eaa24190-5226-42eb-99d9-27a9d65cbb61_WRITING REVIEW.docx",
       "SourceId": "CourseService",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\newcollab\\Collab\\CourseService\\CourseService\\wwwroot\\",
+      "ContentRoot": "/src/CourseService/wwwroot/",
       "BasePath": "_content/CourseService",
       "RelativePath": "syllabuses/eaa24190-5226-42eb-99d9-27a9d65cbb61_WRITING REVIEW.docx",
       "AssetKind": "All",
@@ -356,7 +356,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\syllabuses\\eaa24190-5226-42eb-99d9-27a9d65cbb61_WRITING REVIEW.docx"
+      "OriginalItemSpec": "wwwroot/syllabuses/eaa24190-5226-42eb-99d9-27a9d65cbb61_WRITING REVIEW.docx"
     }
   ]
 }

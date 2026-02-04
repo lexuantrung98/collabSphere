@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\newcollab\\Collab\\CourseService\\CourseService\\CourseService.csproj": {}
+    "/src/CourseService/CourseService.csproj": {}
   },
   "projects": {
-    "D:\\newcollab\\Collab\\CourseService\\CourseService\\CourseService.csproj": {
+    "/src/CourseService/CourseService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\newcollab\\Collab\\CourseService\\CourseService\\CourseService.csproj",
+        "projectUniqueName": "/src/CourseService/CourseService.csproj",
         "projectName": "CourseService",
-        "projectPath": "D:\\newcollab\\Collab\\CourseService\\CourseService\\CourseService.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\newcollab\\Collab\\CourseService\\CourseService\\obj\\",
+        "projectPath": "/src/CourseService/CourseService.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/src/CourseService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -95,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.416/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.417/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

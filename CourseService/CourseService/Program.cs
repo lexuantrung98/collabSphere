@@ -129,6 +129,29 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// ==========================================
+// AUTO-MIGRATIONS ON STARTUP (Production/Docker)
+// ==========================================
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        var context = services.GetRequiredService<CourseDbContext>();
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        
+        logger.LogInformation("Starting database migration for CourseService...");
+        context.Database.Migrate();
+        logger.LogInformation("Database migration completed successfully.");
+    }
+    catch (Exception ex)
+    {
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogWarning(ex, "Migration failed or already applied. Continuing with application startup...");
+        // Don't throw - let the app continue even if migration fails
+    }
+}
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

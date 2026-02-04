@@ -23,8 +23,8 @@ RUN dotnet restore && dotnet publish -c Release -o /app/publish
 # ============================================
 FROM mcr.microsoft.com/dotnet/aspnet:8.0-alpine AS final
 
-# Install curl for health checks
-RUN apk add --no-cache curl
+# Install curl for health checks and icu-libs for globalization
+RUN apk add --no-cache curl icu-libs
 
 # Create non-root user for security
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
@@ -49,8 +49,7 @@ EXPOSE 5021
 # Environment variables
 ENV ASPNETCORE_URLS=http://+:5021 \
     ASPNETCORE_ENVIRONMENT=Production \
-    DOTNET_RUNNING_IN_CONTAINER=true \
-    DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
+    DOTNET_RUNNING_IN_CONTAINER=true
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \

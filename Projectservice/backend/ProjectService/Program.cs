@@ -72,6 +72,30 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 // ==========================================
+// AUTO-MIGRATIONS ON STARTUP (Production/Docker)
+// ==========================================
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        var context = services.GetRequiredService<ProjectDbContext>();
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        
+        logger.LogInformation("Starting database migration for ProjectService...");
+        context.Database.Migrate();
+        logger.LogInformation("Database migration completed successfully.");
+    }
+    catch (Exception ex)
+    {
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogWarning(ex, "Migration failed or already applied. Continuing with application startup...");
+        // Don't throw - let the app continue even if migration fails
+        // This handles cases where tables already exist or partial migrations occurred
+    }
+}
+
+// ==========================================
 // 6. PIPELINE
 // ==========================================
 if (app.Environment.IsDevelopment())
@@ -89,4 +113,8 @@ app.UseAuthentication(); // QUAN TRỌNG: Phải đặt TRƯỚC UseAuthorizatio
 app.UseAuthorization();
 
 app.MapControllers();
+
+// Health check endpoint for Docker
+app.MapGet("/health", () => Results.Ok(new { status = "healthy", service = "ProjectService" }));
+
 app.Run();

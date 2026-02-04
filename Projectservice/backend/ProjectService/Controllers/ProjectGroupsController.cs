@@ -299,6 +299,62 @@ namespace ProjectService.Controllers
                 return StatusCode(500, $"Error creating group: {ex.Message}");
             }
         }
+        
+        // POST: api/ProjectGroups/{groupId}/final-grade - Save final grade
+        [HttpPost("{groupId}/final-grade")]
+        [Authorize(Roles = "Lecturer,Admin")]
+        public async Task<IActionResult> SaveFinalGrade(Guid groupId, [FromBody] SaveFinalGradeRequest request)
+        {
+            var group = await _context.ProjectGroups
+                .FirstOrDefaultAsync(g => g.Id == groupId && !g.IsDeleted);
+                
+            if (group == null)
+            {
+                return NotFound($"Group with ID {groupId} not found");
+            }
+            
+            // Update final grade fields
+            group.FinalGrade = request.Grade;
+            group.FinalGradeFeedback = request.Feedback?.Trim();
+            group.FinalGradedAt = DateTime.UtcNow;
+            group.FinalGradedBy = User.FindFirst("sub")?.Value ?? User.Identity?.Name ?? request.LecturerId;
+            
+            await _context.SaveChangesAsync();
+            
+            return Ok(new FinalGradeResponse
+            {
+                Grade = group.FinalGrade.Value,
+                Feedback = group.FinalGradeFeedback,
+                GradedAt = group.FinalGradedAt.Value,
+                GradedBy = group.FinalGradedBy ?? "Unknown"
+            });
+        }
+        
+        // GET: api/ProjectGroups/{groupId}/final-grade - Get final grade
+        [HttpGet("{groupId}/final-grade")]
+        public async Task<IActionResult> GetFinalGrade(Guid groupId)
+        {
+            var group = await _context.ProjectGroups
+                .FirstOrDefaultAsync(g => g.Id == groupId && !g.IsDeleted);
+                
+            if (group == null)
+            {
+                return NotFound($"Group with ID {groupId} not found");
+            }
+            
+            if (!group.FinalGrade.HasValue)
+            {
+                return NotFound("This group has not been graded yet");
+            }
+            
+            return Ok(new FinalGradeResponse
+            {
+                Grade = group.FinalGrade.Value,
+                Feedback = group.FinalGradeFeedback,
+                GradedAt = group.FinalGradedAt!.Value,
+                GradedBy = group.FinalGradedBy ?? "Unknown"
+            });
+        }
     }
 
     public class CreateGroupRequest
@@ -353,5 +409,25 @@ namespace ProjectService.Controllers
     public class AssignProjectRequest
     {
         public Guid ProjectTemplateId { get; set; }
+    }
+    
+    public class SaveFinalGradeRequest
+    {
+        [Required(ErrorMessage = "Grade is required")]
+        [Range(0, 10, ErrorMessage = "Grade must be between 0 and 10")]
+        public decimal Grade { get; set; }
+        
+        public string? Feedback { get; set; }
+        
+        [Required(ErrorMessage = "LecturerId is required")]
+        public string LecturerId { get; set; } = string.Empty;
+    }
+    
+    public class FinalGradeResponse
+    {
+        public decimal Grade { get; set; }
+        public string? Feedback { get; set; }
+        public DateTime GradedAt { get; set; }
+        public string GradedBy { get; set; } = string.Empty;
     }
 }

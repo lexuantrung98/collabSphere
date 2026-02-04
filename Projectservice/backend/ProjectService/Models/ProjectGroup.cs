@@ -9,6 +9,12 @@ public class ProjectGroup
     public string? SubjectCode { get; set; } // Mã môn học (VD: "LT2", "DL1") - để dễ filter
     public int MaxMembers { get; set; } = 5; // Số lượng thành viên tối đa (default: 5)
     
+    // Final project grading
+    public decimal? FinalGrade { get; set; } // Điểm cuối (0-10), nullable
+    public string? FinalGradeFeedback { get; set; } // Đánh giá, nhận xét
+    public DateTime? FinalGradedAt { get; set; } // Thời điểm chấm
+    public string? FinalGradedBy { get; set; } // Lecturer ID/Email đã chấm
+    
     // Soft delete support
     public bool IsDeleted { get; set; } = false;
     public DateTime? DeletedAt { get; set; }

@@ -3853,19 +3853,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "/root/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\newcollab\\Collab\\AccountService\\AccountService\\AccountService.csproj",
+      "projectUniqueName": "/src/AccountService/AccountService.csproj",
       "projectName": "AccountService",
-      "projectPath": "D:\\newcollab\\Collab\\AccountService\\AccountService\\AccountService.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\newcollab\\Collab\\AccountService\\AccountService\\obj\\",
+      "projectPath": "/src/AccountService/AccountService.csproj",
+      "packagesPath": "/root/.nuget/packages/",
+      "outputPath": "/src/AccountService/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/root/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -3948,7 +3948,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.416/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.417/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

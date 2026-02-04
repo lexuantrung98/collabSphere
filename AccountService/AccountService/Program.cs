@@ -49,6 +49,8 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<AccountDbContext>();
+    // Auto-migrate database on startup (for Docker)
+    context.Database.Migrate();
     await SeedData.InitializeAsync(context);
 }
 
@@ -67,5 +69,8 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+// Health check endpoint for Docker
+app.MapGet("/health", () => Results.Ok(new { status = "healthy", service = "AccountService" }));
 
 app.Run();

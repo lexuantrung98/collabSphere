@@ -374,6 +374,12 @@ namespace AccountService.Services
                 new Claim(ClaimTypes.Role, user.Role)
             };
 
+            // Add Code claim for students/lecturers (e.g., SV000007)
+            if (!string.IsNullOrEmpty(user.Code))
+            {
+                claims.Add(new Claim("Code", user.Code));
+            }
+
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(claims),

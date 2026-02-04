@@ -1,0 +1,8 @@
+# Bỏ qua thư mục build rác
+bin/
+obj/
+Debug/
+Release/
+
+# Bỏ qua file key cụ thể (dù nó nằm ở đâu)
+firebase-admin-sdk.json

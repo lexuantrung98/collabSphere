@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "um76WHgspqmdmzKzqK2GfjspQMuxPcmvI/VvjywtXg8=",
+  "Source": "CommunicationService",
+  "BasePath": "_content/CommunicationService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "CommunicationService/wwwroot",
+      "Source": "CommunicationService",
+      "ContentRoot": "/src/Communication_Service/wwwroot/",
+      "BasePath": "_content/CommunicationService",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

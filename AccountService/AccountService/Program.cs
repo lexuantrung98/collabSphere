@@ -22,7 +22,7 @@ policy.AllowAnyOrigin()
 });
 });
 
-// 🔥 LẤY DB TỪ ENV (KHÔNG CRASH)
+// 🔥 DB (không crash nếu thiếu)
 var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection");
 
 if (!string.IsNullOrEmpty(connectionString))
@@ -32,12 +32,12 @@ options.UseNpgsql(connectionString));
 }
 else
 {
-Console.WriteLine("⚠️ No database configured - running without DB");
+Console.WriteLine("No DB configured");
 }
 
 builder.Services.AddScoped<IAuthService, AuthService>();
 
-// 🔥 JWT SAFE
+// 🔥 JWT safe
 var jwtSection = builder.Configuration.GetSection("Jwt");
 var jwtKeyString = jwtSection["Key"] ?? "DEFAULT_SECRET_KEY_123456789";
 var jwtKey = Encoding.UTF8.GetBytes(jwtKeyString);
@@ -55,10 +55,6 @@ IssuerSigningKey = new SymmetricSecurityKey(jwtKey)
 };
 });
 
-// 🔥 PORT CHO RENDER
-var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
-builder.WebHost.UseUrls($"[http://0.0.0.0:{port}](http://0.0.0.0:{port})");
-
 var app = builder.Build();
 
 app.UseCors("AllowAll");
@@ -67,7 +63,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-// 🔥 TEST SERVER
 app.MapGet("/health", () => Results.Ok(new { status = "healthy" }));
 
 app.Run();

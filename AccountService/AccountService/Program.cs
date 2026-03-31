@@ -48,7 +48,8 @@ IssuerSigningKey = new SymmetricSecurityKey(jwtKey)
 };
 });
 
-builder.WebHost.UseUrls($"[http://0.0.0.0:{Environment.GetEnvironmentVariable("PORT")}](http://0.0.0.0:{Environment.GetEnvironmentVariable%28%22PORT%22%29})");
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+builder.WebHost.UseUrls($"[http://0.0.0.0:{port}](http://0.0.0.0:{port})");
 
 var app = builder.Build();
 

@@ -22,11 +22,12 @@ policy.AllowAnyOrigin()
 });
 });
 
+// 🔥 CHỈ DÙNG ENV (KHÔNG localhost)
 var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection");
 
 if (string.IsNullOrEmpty(connectionString))
 {
-connectionString = "Host=localhost;Port=5432;Database=test;Username=test;Password=test";
+throw new Exception("Database connection string is missing!");
 }
 
 builder.Services.AddDbContext<AccountDbContext>(options =>
@@ -34,8 +35,9 @@ options.UseNpgsql(connectionString));
 
 builder.Services.AddScoped<IAuthService, AuthService>();
 
+// 🔥 JWT không crash nếu thiếu config
 var jwtSection = builder.Configuration.GetSection("Jwt");
-var jwtKeyString = jwtSection["Key"] ?? "THIS_IS_DEFAULT_SECRET_KEY_123456";
+var jwtKeyString = jwtSection["Key"] ?? "DEFAULT_SECRET_KEY_123456789";
 
 var jwtKey = Encoding.UTF8.GetBytes(jwtKeyString);
 
@@ -52,6 +54,7 @@ IssuerSigningKey = new SymmetricSecurityKey(jwtKey)
 };
 });
 
+// 🔥 PORT cho Render
 var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
 builder.WebHost.UseUrls($"[http://0.0.0.0:{port}](http://0.0.0.0:{port})");
 
@@ -69,6 +72,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// 🔥 Health check
 app.MapGet("/health", () => Results.Ok(new { status = "healthy", service = "AccountService" }));
 
 app.Run();

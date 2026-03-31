@@ -53,20 +53,6 @@ builder.WebHost.UseUrls($"[http://0.0.0.0:{port}](http://0.0.0.0:{port})");
 
 var app = builder.Build();
 
-using (var scope = app.Services.CreateScope())
-{
-var context = scope.ServiceProvider.GetRequiredService<AccountDbContext>();
-try
-{
-context.Database.Migrate();
-await SeedData.InitializeAsync(context);
-}
-catch (Exception ex)
-{
-Console.WriteLine("DB init failed: " + ex.Message);
-}
-}
-
 if (app.Environment.IsDevelopment())
 {
 app.UseSwagger();

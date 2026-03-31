@@ -22,8 +22,12 @@ policy.AllowAnyOrigin()
 });
 });
 
-var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection")
-?? builder.Configuration.GetConnectionString("DefaultConnection");
+var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection");
+
+if (string.IsNullOrEmpty(connectionString))
+{
+connectionString = "Host=localhost;Port=5432;Database=test;Username=test;Password=test";
+}
 
 builder.Services.AddDbContext<AccountDbContext>(options =>
 options.UseNpgsql(connectionString));
@@ -31,19 +35,19 @@ options.UseNpgsql(connectionString));
 builder.Services.AddScoped<IAuthService, AuthService>();
 
 var jwtSection = builder.Configuration.GetSection("Jwt");
-var jwtKey = Encoding.UTF8.GetBytes(jwtSection["Key"]!);
+var jwtKeyString = jwtSection["Key"] ?? "THIS_IS_DEFAULT_SECRET_KEY_123456";
+
+var jwtKey = Encoding.UTF8.GetBytes(jwtKeyString);
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 .AddJwtBearer(options =>
 {
 options.TokenValidationParameters = new TokenValidationParameters
 {
-ValidateIssuer = true,
-ValidateAudience = true,
+ValidateIssuer = false,
+ValidateAudience = false,
 ValidateLifetime = true,
 ValidateIssuerSigningKey = true,
-ValidIssuer = jwtSection["Issuer"],
-ValidAudience = jwtSection["Audience"],
 IssuerSigningKey = new SymmetricSecurityKey(jwtKey)
 };
 });
